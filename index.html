@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sytles.css">
+    <script src="./js/topnav.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/gradeimage.js"></script>
+    <script src="./js/scrolltopnav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Site Flexbox</title>
+</head>
+<body>
+    <div class="flex-conteiner">
+        <div class="header">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="navbar">
+            <div class="topnav" id="navbar">
+                <nav>
+                    <a href="#home" class="active">Home</a>
+                    <a href="#perfil">Perfil</a>
+                    <a href="#portfolio">Portfólio</a>
+                    <a href="#fale-conosco">Fale Conosco</a>
+                </nav>
+            </div>          
+        </div>
+        <section id="home">
+            
+        <div class="content">
+            <p>No Doce Instante - Estúdio Fotográfico, capturamos a magia dos momentos mais preciosos da vida. Com uma década de 
+                experiência, especializamo-nos em ensaios fotográficos de recém-nascidos, crianças e gestantes, eternizando a 
+                doçura e a pureza dessas fases encantadoras.
+            </p>
+            <p>Oferecemos também sessões fotográficas para formaturas, retratos de família e celebrações de 15 anos, tanto em 
+                ambientes internos quanto externos, garantindo versatilidade e conforto para nossos clientes. Venha viver o 
+                seu Doce Instante conosco.
+            </p>
+        </div>
+        <div class="carrousel">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="./img/carrousel1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="./img/carrousel2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="./img/carrousel3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./img/carrousel4.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./img/carrousel5.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    showSlides(1)
+                });
+            </script>
+        </div>
+        </section>
+        <section id="perfil">
+            <div class="row">
+                <div class="column">
+                  <img src="./img/estudio1.png" style="width: 100%;">
+                  <img src="./img/estudio2.png" style="width: 100%;">
+                  <img src="./img/estudio3.png" style="width: 100%;">
+                </div>
+                <div class="column">
+                  <img src="./img/estudio4.png" style="width: 100%;">
+                  <img src="./img/estudio5.png" style="width: 100%;">
+                  <img src="./img/estudio6.png" style="width: 100%;">
+
+                </div>
+                <div class="column">
+                  <img src="./img/estudio7.png" style="width: 100%;">
+                  <img src="./img/estudio8.png" style="width: 100%;">
+                  <img src="./img/estudio9.png" style="width: 100%;">
+                </div>
+                <div class="apresentacao">
+                    <br>
+                    <p>Convidamos você a explorar nosso portfólio e se encantar com os últimos ensaios, que demonstram a arte de 
+                        congelar momentos especiais com técnicas de fotografia e vídeo de última geração. Nossa equipe 
+                        especializada utiliza equipamentos de ponta para realçar a beleza e a expressividade em cada imagem. 
+                        Venha nos visitar e deixe o Doce Instante eternizar seus momentos preciosos.
+                    </p>
+                  </div>
+              </div>
+        </section>
+        <section id="portfolio">
+
+            <div class="header" id="myHeader">
+                <h1>Portfólio</h1>
+                <p>Para acessar nossos ensaios recentes, acesse os botões abaixo e conheça nosso trabalho!</p>
+                <button class="btn" onclick="one()">1</button>
+                <button class="btn active" onclick="two()">2</button>
+                <button class="btn" onclick="four()">3</button>
+            </div>
+            <div class="row2"> 
+                <div class="column2">
+                  <img src="./img/portfolio1.png">
+                  <img src="./img/portfolio2.png">
+                  <img src="./img/portfolio3.png">
+                  <img src="./img/portfolio4.png">
+                  <img src="./img/portfolio5.png">
+                  <img src="./img/portfolio6.png">
+                </div>
+                <div class="column2">
+                  <img src="./img/portfolio7.png">
+                  <img src="./img/portfolio8.png">
+                  <img src="./img/portfolio9.png">
+                  <img src="./img/portfolio10.png">
+                  <img src="./img/portfolio11.png">
+                  <img src="./img/portfolio12.png">
+                </div>  
+                <div class="column2">
+                  <img src="./img/portfolio13.png">
+                  <img src="./img/portfolio14.png">
+                  <img src="./img/portfolio15.png">
+                  <img src="./img/portfolio16.png">
+                  <img src="./img/portfolio17.png">
+                  <img src="./img/portfolio18.png">
+                </div>
+                <div class="column2">
+                  <img src="./img/portfolio20.png">
+                  <img src="./img/portfolio21.png">
+                  <img src="./img/portfolio22.png">
+                  <img src="./img/portfolio23.png">
+                  <img src="./img/portfolio24.png">
+                  <img src="./img/portfolio25.png">
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="visita">
+                <h2>Não perca a chance de eternizar suas memórias. Venha nos visitar e conheça nosso espaço!</h2>
+                <p><b>Atendemos eventos apenas com hora marcada.</b></p>
+                <p>Horário de Atendimento:</p>
+                <p>Segunda - Sexta: 09h às 12h - 13h30 às 19h30</p>
+                <p>Sábados: Sob agendamento.</p>
+                <p>Email: estudiodoce-encanto@gmail.com</p>
+                <div class="iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.2595965108426!2d-51.1845125244096!3d-29.654240475122325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95195b4af67ae30d%3A0x734b8422a79a8c45!2sR.%20Arthur%20Rodenbusch%2C%2020%20-%20Bela%20Vista%2C%20Est%C3%A2ncia%20Velha%20-%20RS%2C%2093600-000!5e0!3m2!1spt-BR!2sbr!4v1719927893747!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="contato">
+                <h2>Se preferir, pode entrar em contato conosco atráves do formulário abaixo.</h2>
+                <p>Preenchendo as informações solicitadas e detalhando sua solicitação, você nos ajudará a entender melhor suas necessidades e a responder de forma mais rápida e precisa!</p>
+                <form action="">
+                    <input class="inp-form" type="text" id="fname" name="fname" placeholder="Nome Completo"><br><br>
+                    <input class="inp-form" type="text" id="email" name="email" placeholder="E-mail"><br><br>
+                    <input class="inp-form" type="text" id="telefone" name="telefone" placeholder="Telefone"><br><br>
+                    <textarea class="inp-form" id="message" name="message" placeholder="Mensagem" rows="5" required></textarea><br><br>
+                    <input type="submit" value="Enviar">
+                </form> 
+                <p>Agradecemos por escolher entrar em contato conosco e estamos à disposição para atendê-lo.</p>
+            </div>
+        </section>
+        <div class="footer-d">
+            <center>
+                <a href="https://www.instagram.com/thaina_tuanne/" class="icon-link">
+                    <i class="fa fa-instagram" style="color: #026873;"></i>
+                </a>
+                <a href="https://www.facebook.com/Thainadasilva/" class="icon-link">
+                    <i class="fa fa-facebook-square" style="color: #026873;"></i>
+                </a>
+                <a class="btn-whatsapp" href="https://wa.me/51999802051" target="_blank">
+                    <i class="fa fa-whatsapp"></i>
+                </a>
+            </center>
+        </div>
+        <div class="footer-e">
+                <p>© Doce Instante - Estúdio Fotográfico - Todos os Direitos Reservados</p>
+        </div>
+    </div>
+</body>
+</html>
